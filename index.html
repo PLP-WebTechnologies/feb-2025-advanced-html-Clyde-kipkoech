@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced HTML5 Elements and Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    form {
+      max-width: 600px;
+    }
+    form div {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Topics to Learn</h2>
+  <ol type="I">
+    <li>HTML5 Elements</li>
+    <li>HTML5 Forms</li>
+    <li>Input Types</li>
+    <li>Form Validation</li>
+    <li>Multimedia Integration</li>
+  </ol>
+
+  
+  <h2>Beautiful Scenery</h2>
+  <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Beautiful Landscape" width="500" />
+
+ 
+  <h2>Contact List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jane Doe</td>
+        <td>Ati River </td>
+        <td>0700000001</td>
+        <td>jane@example.com</td>
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>nakuru</td>
+        <td>0700000002</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary Johnson</td>
+        <td>nairobi</td>
+        <td>0700000003</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>James Brown</td>
+        <td> Valley </td>
+        <td>0700000004</td>
+        <td>james@example.com</td>
+      </tr>
+      <tr>
+        <td>Emily White</td>
+        <td> Ocean </td>
+        <td>0700000005</td>
+        <td>emily@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>User Registration Form</h2>
+  <form action="#" method="post">
+
+    <div>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+    </div>
+
+    
+    <div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required />
+    </div>
+
+    
+    <div>
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+    </div>
+
+   
+    <div>
+      <label for="course">Choose a Course</label>
+      <select id="course" name="course" required>
+        <option value="">--Select Course--</option>
+        <option value="web">Web Development</option>
+        <option value="data">Data Science</option>
+        <option value="design">Graphic Design</option>
+      </select>
+    </div>
+
+    <!-- Radio Buttons: Gender -->
+    <div>
+      <label>Gender</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+    </div>
+
+    
+    <div>
+      <label>Areas of Interest</label>
+      <input type="checkbox" id="coding" name="interests" value="coding" />
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="designing" name="interests" value="designing" />
+      <label for="designing">Designing</label>
+      <input type="checkbox" id="networking" name="interests" value="networking" />
+      <label for="networking">Networking</label>
+    </div>
+
+  
+    <div>
+      <button type="submit">Register</button>
+    </div>
+  </form>
+
+</body>
+</html>
